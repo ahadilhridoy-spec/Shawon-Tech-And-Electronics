@@ -1,0 +1,55 @@
+{
+  "entities": {
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Financial transaction record for Shawon Tech And Electronics",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string" },
+        "flow": { "type": "string" },
+        "quantity": { "type": "integer" },
+        "unitPrice": { "type": "number" },
+        "totalAmount": { "type": "number" },
+        "cashPaid": { "type": "number" },
+        "dueAmount": { "type": "number" },
+        "person": { "type": "string" },
+        "description": { "type": "string" },
+        "paymentMethod": { "type": "string" },
+        "sender": { "type": "string" },
+        "receiver": { "type": "string" },
+        "date": { "type": "integer" },
+        "transactionCode": { "type": "string" },
+        "userId": { "type": "string" }
+      },
+      "required": ["type", "totalAmount", "userId"]
+    },
+    "PaymentAccount": {
+      "title": "PaymentAccount",
+      "description": "Payment accounts (bKash, Nagad, Cash) for store transactions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "accountNumber": { "type": "string" },
+        "accountCode": { "type": "string" },
+        "method": { "type": "string" },
+        "scope": { "type": "string" },
+        "note": { "type": "string" },
+        "isCustom": { "type": "boolean" },
+        "sortOrder": { "type": "integer" },
+        "userId": { "type": "string" }
+      },
+      "required": ["accountNumber", "method", "userId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/transactions/{transactionId}": {
+      "schema": "Transaction",
+      "description": "User transaction records"
+    },
+    "/users/{userId}/payment_accounts/{accountId}": {
+      "schema": "PaymentAccount",
+      "description": "Configured bKash, Nagad, and Cash accounts"
+    }
+  }
+}

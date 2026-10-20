@@ -1,0 +1,6 @@
+{
+  "name": "Shawon Tech And Electronics",
+  "description": "Business dashboard and transaction ledger for Shawon Tech And Electronics, featuring bKash and Nagad account tracking, sales/expense management, and real-time financial insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
