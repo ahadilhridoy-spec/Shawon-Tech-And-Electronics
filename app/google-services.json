@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312388484667",
+    "project_id": "hridoy-kazi",
+    "storage_bucket": "hridoy-kazi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312388484667:android:5136b4dd68f09dbae9a61e",
+        "android_client_info": {
+          "package_name": "com.aistudio.shawontech.txmgr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZP1ixFp-thOtwAqbxf5kBWv4r_IyFNzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
